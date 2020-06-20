@@ -1,0 +1,166 @@
+import {StyleSheet, Dimensions} from 'react-native';
+
+const styles = {
+  city: StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: 'white',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    itemContainer: {
+      margin: 15,
+      borderRadius: 16,
+      justifyContent: 'center',
+      height: Dimensions.get('window').height / 14,
+      width: Dimensions.get('window').width / 1.4,
+      backgroundColor: '#202040',
+      alignItems: 'center',
+      alignSelf: 'center',
+      shadowOpacity: 3,
+    },
+    text: {
+      fontWeight: 'bold',
+      fontSize: 18,
+      color: 'white',
+    },
+    cityNum: {
+      alignSelf: 'center',
+      marginVertical: 10,
+      borderWidth: 1,
+      padding: 10,
+      borderColor: 'white',
+      borderTopColor: 'grey',
+      borderBottomColor: 'grey',
+    },
+    cityNumText: {
+      fontSize: 17,
+      fontWeight: 'bold',
+      color: '#202040',
+    },
+  }),
+  restaurantList: StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      margin: 20,
+      backgroundColor: 'white',
+    },
+    restaurantListItemTitle: {
+      color: '#679b9b',
+      fontSize: 20,
+      fontWeight: 'bold',
+      justifyContent: 'center',
+      alignSelf: 'center',
+    },
+    restaurantListItemArea: {
+      marginTop: 4,
+      fontSize: 15,
+      fontWeight: 'bold',
+    },
+  }),
+  restaurantDetail: StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+    },
+    headerStyle: {
+      fontWeight: 'bold',
+      fontSize: 22,
+      color: '#202040',
+      padding: 10,
+    },
+    dot: {
+      width: 15,
+      height: 15,
+      borderRadius: 10,
+      backgroundColor: '#679b9b',
+    },
+    areaNameStyle: {
+      margin: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'row',
+      borderRadius: 15,
+      borderWidth: 1,
+      borderColor: '#202040',
+      backgroundColor: '#202040',
+      width: Dimensions.get('window').width / 1.05,
+    },
+    areaNameTextStyle: {
+      fontSize: 22,
+      padding: 15,
+      fontWeight: 'bold',
+      color: 'white',
+    },
+    addressNameStyle: {
+      margin: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderRadius: 15,
+      borderWidth: 1,
+      borderColor: '#202040',
+      backgroundColor: '#202040',
+      width: Dimensions.get('window').width / 1.05,
+    },
+    adressNameTextStyle: {
+      fontSize: 22,
+      padding: 15,
+      fontWeight: 'bold',
+      color: 'white',
+    },
+    phoneStyle: {
+      margin: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'row',
+      borderRadius: 15,
+      borderWidth: 1,
+      borderColor: '#202040',
+      backgroundColor: '#202040',
+      width: Dimensions.get('window').width / 1.05,
+    },
+    phoneTextStyle: {
+      fontSize: 22,
+      padding: 15,
+      fontWeight: 'bold',
+      color: 'white',
+    },
+  }),
+  searchBar: StyleSheet.create({
+    container: {
+      alignSelf: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      backgroundColor: 'white',
+      padding: 5,
+      margin: 5,
+      borderRadius: 10,
+      width: Dimensions.get('window').width / 1.1,
+      height: Dimensions.get('window').height / 23,
+      //marginTop: -30,
+    },
+    textInputStyle: {
+      fontSize: 20,
+      justifyContent: 'center',
+      color: 'black',
+      marginLeft: 30,
+    },
+  }),
+  rezervation: {
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    textStyle: {
+      color: '#202040',
+      fontSize: 25,
+      fontWeight: 'bold',
+    },
+  },
+};
+
+export default styles;
